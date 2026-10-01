@@ -1,0 +1,32 @@
+file,variable,description,allowed_values
+incidents.csv,incident_id,Stable incident identifier,BR-001 to BR-048
+incidents.csv,incident_date,Start date of the attack (ranges use the start date),YYYY-MM-DD
+incidents.csv,year,Calendar year of incident_date,2022-2026
+incidents.csv,affected_system,"Name of the affected bridge or cross-chain protocol, as recorded",Text
+incidents.csv,affected_system_id,System identifier used to count affected systems; components of the same protocol share one identifier,Text (43 distinct values)
+incidents.csv,repeat_system,Whether the affected system has more than one incident in the dataset,Yes / No
+incidents.csv,pattern_code,Primary trust-violation attack pattern (code),"PF, LE, EI, ESM, CS, IH"
+incidents.csv,attack_pattern,Primary trust-violation attack pattern (full name),See codebook/attack_patterns.md
+incidents.csv,domain_code,Primary functional domain (code),"FD-1, FD-2, FD-3, FD-4, FD-5"
+incidents.csv,functional_domain,Primary functional domain (full name),See codebook/functional_domains.md
+incidents.csv,gross_loss_usd,Gross bridge-specific loss in US dollars at the time of the incident; recoveries not subtracted,Numeric
+incidents.csv,loss_as_reported,Loss figure as reported in the sources,Text
+incidents.csv,loss_basis,What the gross loss figure measures,Bridge-held assets withdrawn; Wallet funds drained (approvals or redirection); Value of unbacked minted assets; Real assets obtained with unbacked tokens; Reported figure; basis not specified
+incidents.csv,loss_normalisation_note,"Explanation of any change from the reported figure (e.g., lower bound of a range)",Text or empty
+incidents.csv,evidence_level,Strength of supporting evidence,"E1, E2, E3, E4 (see codebook/codebook.md)"
+incidents.csv,classification_confidence,Rule-based audit indicator; not a probabilistic measure,"High, Medium, Low"
+incidents.csv,boundary_case,Whether a boundary rule was needed to choose the primary pattern,Yes / No
+incidents.csv,alternative_pattern,Most plausible alternative pattern (boundary cases only),Pattern name or empty
+incidents.csv,alternative_domain,Domain corresponding to the alternative pattern (boundary cases only),Domain name or empty
+incidents.csv,enabling_mechanism,Supporting method explicitly stated in the root cause; not a pattern label,Text or 'None recorded'
+incidents.csv,root_cause,Technical description of how the attack worked,Text
+incidents.csv,classification_rationale,Reason for the pattern and domain labels,Text
+incidents.csv,scope_note,Notes on borderline scope or evidence decisions,Text or empty
+incidents.csv,source_ids,"Identifiers of the evidence sources, linked to data/sources.csv",Semicolon-separated SRC IDs
+sources.csv,source_id,Source identifier,SRC001 ...
+sources.csv,incident_id,Incident the source supports,BR-001 to BR-048
+sources.csv,source_order,Order of the source in the original incident record,1-3
+sources.csv,source_url,Public URL of the source,URL
+excluded_incidents.csv,excluded_id,Identifier of the excluded candidate,EX-001 to EX-012
+excluded_incidents.csv,exclusion_category,Reason category for exclusion,Outside study period; Out of scope (several sub-categories)
+excluded_incidents.csv,exclusion_rationale,Explanation of the exclusion decision,Text
