@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+title: "Trust-Violation Attack Patterns in Cross-Chain Bridges: Data, Codebook, and Analysis"
+version: 1.0.0
+type: dataset
+authors:
+  - given-names: Ishraq
+    family-names: Samiha
+    affiliation: "Chittagong University of Engineering and Technology"
+  - given-names: Yasir
+    family-names: Rahman
+    affiliation: "Chittagong University of Engineering and Technology"
+  - given-names: Rahma
+    family-names: Mukta
+    affiliation: "University of New South Wales (UNSW Sydney)"
+license: CC-BY-4.0
+keywords:
+  - cross-chain bridge
+  - blockchain security
+  - attack taxonomy
+  - incident dataset
+# After creating the repository, add a line:  repository-code: "https://github.com/<your-username>/cross-chain-bridge-attack-patterns"
+# After archiving a release on Zenodo, add a line:  doi: "10.5281/zenodo.<id>"
