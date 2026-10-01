@@ -1,4 +1,4 @@
-# Trust-Violation Attack Patterns in Cross-Chain Bridges
+# Attack Patterns in Cross-Chain Bridges
 
 Data, codebook, and analysis scripts accompanying the paper:
 
